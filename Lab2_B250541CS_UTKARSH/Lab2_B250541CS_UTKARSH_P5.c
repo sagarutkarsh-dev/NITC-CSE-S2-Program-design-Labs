@@ -14,9 +14,9 @@ struct students
 struct students kid[n];
 printf("Enter name and marks of students\n");
 for(int i=0;i<n;i++)
-  scanf("%s %d",&kid[i].name,&kid[i].marks);
+  scanf("%s %d",kid[i].name,&kid[i].marks);
 printf("Enter the name of student\n");
-scanf("%s",&target);
+scanf("%s",target);
 for(int i=0;i<n;i++)
 {
   if(strcmp(kid[i].name,target)==0)

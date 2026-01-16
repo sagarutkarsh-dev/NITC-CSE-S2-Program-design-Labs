@@ -5,20 +5,20 @@ int search(char s[],char c)
    {
       if(s[i]==c)
       {
-          return 0;
+          return 1;
       }
    }
-   return 1;
+   return 0;
 }
 int main()
 {
    char c;
    char s[50];
    printf("Enter the characters\n");
-    scanf(" %s",&s);
+    scanf(" %s",s);
    printf("Enter c\n");
    scanf(" %c",&c);
-   search(s,c)==0?printf("Yes"):printf("No");
+   search(s,c)==1?printf("Yes"):printf("No");
    printf("\n");
    return 0;
    

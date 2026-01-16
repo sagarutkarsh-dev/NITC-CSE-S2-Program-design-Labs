@@ -5,12 +5,10 @@ int LinearSearch(int A[],int k,int n)
    {
       if(A[i]==k)
       {
-          printf("%d\n",i);
-          return 0;
+          return i;
       }
    }
-   printf("-1\n");
-   return 0;
+   return -1;
 }
 int main()
 {
@@ -23,7 +21,8 @@ int main()
     scanf("%d",&A[i]);
    printf("Enter k\n");
    scanf("%d",&k);
-   LinearSearch(A,k,n);
+   int pos = LinearSearch(A,k,n);
+   printf("%d\n",pos);
    return 0;
    
 }
